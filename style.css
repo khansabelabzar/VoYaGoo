@@ -1,1 +1,50 @@
-/* ce fichier est un fichier Css */ 
+#carousel {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.slide-img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(0.85);
+}
+
+.hero-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+
+.hero-btn:hover {
+  background-color: #0056b3;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  width: 18rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
