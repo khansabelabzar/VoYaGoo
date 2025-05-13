@@ -7,6 +7,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
   </head>
   
   <body>
@@ -17,7 +19,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="C:\Users\MUSTAPHA PRO\.vscode\extensions\algoritmika.algopython-20250402.152508.0\temp\VoYaGoo\src\2025-05-10 (1).png" alt="Logo" class="logo me-2">
+          <img src="src/2025-05-10 (1).png" alt="Logo" class="logo me-2">
           VoYaGoo
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -36,6 +38,8 @@
       </div>
     </nav>
 
+
+
     <!-- Carousel -->
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -46,16 +50,16 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active position-relative">
-          <img src="C:\Users\MUSTAPHA PRO\.vscode\extensions\algoritmika.algopython-20250402.152508.0\temp\VoYaGoo\src\pexels-chris-the-island-3570397-31958540.jpg" class="slide-img d-block w-100" alt="Agadir Beach">
-          <button class="hero-btn">Start Vacation</button>
+          <img src="src/pexels-mag-photography-1501456-30532031.jpg" class="slide-img d-block w-100" alt="Agadir Beach">
+        
         </div>
         <div class="carousel-item position-relative">
-          <img src="C:\Users\MUSTAPHA PRO\.vscode\extensions\algoritmika.algopython-20250402.152508.0\temp\VoYaGoo\src\pexels-masoodaslami-31981481.jpg" class="slide-img d-block w-100" alt="Chefchaouen">
-          <button class="hero-btn">Start Vacation</button>
+          <img src="src/carousel2.jpg" class="slide-img d-block w-100" alt="Chefchaouen">
+        
         </div>
         <div class="carousel-item position-relative">
-          <img src="C:\Users\MUSTAPHA PRO\.vscode\extensions\algoritmika.algopython-20250402.152508.0\temp\VoYaGoo\src\pexels-orlovamaria-4915802.jpg" class="slide-img d-block w-100" alt="Atlas Mountains">
-          <button class="hero-btn">Start Vacation</button>
+          <img src="src/carousel3.jpg" class="slide-img d-block w-100" alt="Atlas Mountains">
+        
         </div>
       </div>
 
@@ -69,42 +73,70 @@
       </button>
     </div>
 
-    <!-- Cards Section -->
-    <div class="card-container">
-      <!-- First Card -->
-      <div class="card">
-        <img src="C:\Users\MUSTAPHA PRO\.vscode\extensions\algoritmika.algopython-20250402.152508.0\temp\VoYaGoo\src\pexels-quang-nguyen-vinh-222549-3355777.jpg" class="card-img-top" alt="Beach">
-        <div class="card-body">
-          <h5 class="card-title">Beach</h5>
-          <p class="card-text">Relax and enjoy the Moroccan coast.</p>
-          <a href="#" class="btn btn-primary">Explore</a>
-        </div>
-      </div>
 
-      <!-- Second Card (Mountain) -->
-      <div class="card">
-        <img src="C:\Users\MUSTAPHA PRO\.vscode\extensions\algoritmika.algopython-20250402.152508.0\temp\VoYaGoo\src\pexels-masoodaslami-31981481.jpg" class="card-img-top" alt="Mountain">
-        <div class="card-body">
-          <h5 class="card-title">Mountains</h5>
-          <p class="card-text">Adventure through the Atlas mountains.</p>
-          <a href="#" class="btn btn-primary">Discover</a>
+        <!-- Cards Section -->
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <a href="sahara.html" class="text-decoration-none">
+            <div class="card text-bg-dark equal-card h-100">
+              <img src="src/card1.jpg" class="card-img" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Sahara</h5>
+                <p class="card-text">A big, sandy desert with tall dunes, camels, and beautiful sunsets.</p>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-
-      <!-- Third Card (City) -->
-      <div class="card">
-        <img src="https://images.pexels.com/photos/2280639/pexels-photo-2280639.jpeg" class="card-img-top" alt="City">
-        <div class="card-body">
-          <h5 class="card-title">City</h5>
-          <p class="card-text">Experience the charm of Moroccan cities.</p>
-          <a href="#" class="btn btn-primary">Visit</a>
+        
+        <div class="col">
+          <a href="chefchaouen.html" class="text-decoration-none">
+            <div class="card text-bg-dark equal-card h-100">
+              <img src="src/card3.jpg" class="card-img" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Chefchaouen</h5>
+                <p class="card-text">A quiet, pretty town with blue houses and narrow streets in the mountains.</p>
+              </div>
+            </div>
+          </a>
         </div>
+        
+        <div class="col">
+          <a href="casablanca.html" class="text-decoration-none">
+            <div class="card text-bg-dark equal-card h-100">
+              <img src="src/card4.jpg" class="card-img" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Casablanca</h5>
+                <p class="card-text">A busy city by the ocean, known for its big mosque and modern life.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col">
+          <a href="rabat.html" class="text-decoration-none">
+            <div class="card text-bg-dark equal-card h-100">
+              <img src="src/card2.jpg" class="card-img" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Rabat</h5>
+                <p class="card-text">The capital city, with old buildings, gardens, and a peaceful seaside.</p>
+              </div>
+            </div>
+          </a>
+        </div>        
       </div>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
 
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p>&copy; 2025 VoYaGoo. All rights reserved.</p>
+        <a href="#" class="text-light me-3"></a>
+        <a href="#" class="text-light"></a>
+      </div>
+    </footer>
+    
+    
   </body>
 </html>
