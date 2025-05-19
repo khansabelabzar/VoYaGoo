@@ -35,7 +35,6 @@
   height: 40px;
   width: auto;
 }
-
 .card-container {
   display: flex;
   gap: 20px;
@@ -47,4 +46,42 @@
 .card {
   width: 18rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: white;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.equal-card {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* For text readability */
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+.highlight-card {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
