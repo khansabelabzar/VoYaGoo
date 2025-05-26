@@ -44,6 +44,7 @@ h1, p {
   object-fit: cover;
   width: 100%;
   filter: brightness(0.95);
+  filter: brightness(0.85);
 }
 
 .hero-btn {
@@ -93,6 +94,7 @@ h1, p {
 
 .card:hover {
   transform: scale(1.06);
+  transform: scale(1.03);
 }
 
 .equal-card {
@@ -108,10 +110,13 @@ h1, p {
 }
 
 .card-img-overlay {
+
   background-color: rgba(0, 0, 0, 0.3); /* For text readability */
+  background-color: rgba(0, 0, 0, 0.5); /* For text readability */
   color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 20px;
+
 }
