@@ -2,190 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Casablanca - Morocco Vibes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casablanca Tourist Guide</title>
+
   <style>
-    :root {
-      --terracotta: #D9643A;
-      --deep-blue: #2E4057;
-      --mint: #D2E8D2;
-      --sand: #EADBC8;
-      --olive: #A3B18A;
-      --gold: #E0A96D;
-    }
-
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--deep-blue);
-      color: var(--sand);
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('src/stiker.jpg'), url('src/stiker.jpg'), url('src/stiker.jpg');
-      background-repeat: no-repeat, repeat, repeat-x;
-      background-position: top left, center, bottom;
-      background-size: 200px, 100px, 300px;
-      opacity: 0.08;
-      z-index: 0;
-    }
-
-    header {
-      background: linear-gradient(45deg, var(--terracotta), var(--gold));
-      color: white;
-      padding: 3rem 1rem;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef1e6;
       text-align: center;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      position: relative;
-      z-index: 2;
-      animation: fadeIn 1s ease-out;
+      padding: 2rem;
+      color: #4477aa;
     }
 
     h1 {
-      font-size: 3rem;
-      font-weight: 700;
+      font-size: 3.5rem;
+      color: #75aadb;
+      margin-bottom: 0.5rem;
     }
 
-    h2 {
-      color: var(--deep-blue);
-      margin-top: 2rem;
+    .custom-title {
+      font-size: 4rem; /* Bigger than default h1 */
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #2c3e50;
+    }
+
+
+    .subtitle {
       font-size: 1.8rem;
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 3rem 1rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .info-box {
-      background: var(--sand);
-      color: var(--deep-blue);
-      padding: 1.5rem;
-      border-radius: 16px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
-      margin-bottom: 2.5rem;
-      transition: transform 0.3s ease;
-    }
-
-    .info-box:hover {
-      transform: scale(1.02);
-    }
-
-    .img-fluid {
-      border-radius: 14px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-      margin-bottom: 1.2rem;
-      height: 300px;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    a.btn {
-      background-color: var(--olive);
-      border: none;
+      background-color: #c4e8cd;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 10px;
       color: white;
+      margin-bottom: 3rem;
     }
 
-    a.btn:hover {
-      background-color: var(--mint);
-      color: var(--deep-blue);
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
+    .circle {
+      background-color: #fff;
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
+      margin: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* stronger shadow */
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .circle:hover {
+      transform: scale(1.05); /* optional pop effect on hover */
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .circle p {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #c4e8cd;
+      padding: 0.4rem 1rem;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🌊 Discover Casablanca</h1>
-    <p>Where the sea meets the city in color and charm</p>
-  </header>
+  
+  <h1 class="custom-title">CASABLANCA</h1>
+  <div class="subtitle">5 places to visit</div>
 
-  <section class="container">
-    <div class="mb-4">
-      <a href="index.html" class="btn rounded-pill px-4 py-2 shadow-sm fw-bold">
-        ⬅️ Back to Home
-      </a>
-    </div>
+  <div class="container">
+    <a href="hassan-mosque.html" class="link">
+      <div class="circle">
+        <img src="hassan.jpg" alt="Hassan-II mosque" />
+        <p>Hassan-II mosque</p>
+      </div>
+    </a>
 
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="info-box">
-          <h2>🏰 Explore the City</h2>
-          <p>From the grand <strong>Hassan II Mosque</strong> by the waves to the stylish <strong>Rick’s Café</strong>, Casablanca is full of surprises. Walk the lovely <strong>Corniche</strong> and dive into the buzzing <strong>Old Medina</strong> streets.</p>
-        </div>
+    <a href="morocco-mall.html" class="link">
+      <div class="circle">
+        <img src="mall.jpg" alt="Morocco Mall" />
+        <p>Morocco Mall</p>
       </div>
-      <div class="col-md-6">
-        <img src="src/Hassan II Mosque.jpg" class="img-fluid" alt="Hassan II Mosque">
-      </div>
-    </div>
+    </a>
 
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="src/tajine.jpg" class="img-fluid" alt="Delicious Moroccan Food">
+    <a href="ligue-parc.html" class="link">
+      <div class="circle">
+        <img src="parc.jpg" alt="Ligue Arabe Parc" />
+        <p>Ligue Arabe Parc</p>
       </div>
-      <div class="col-md-6">
-        <div class="info-box">
-          <h2>🍽️ Casablanca Food</h2>
-          <p>Try hot <strong>tagines</strong>, grilled <strong>meat</strong>, yummy <strong>chebakia</strong> sweets, and spicy <strong>sardines</strong>. Your taste buds will dance!</p>
-        </div>
-      </div>
-    </div>
+    </a>
 
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="info-box">
-          <h2>🧥 What They Wear</h2>
-          <p>During weddings or Eid, people wear colorful <strong>caftans</strong> and <strong>djellabas</strong>. Men wear white and women sparkle in gold and pink!</p>
-        </div>
+    <a href="mahkama.html" class="link">
+      <div class="circle">
+        <img src="mahkama.jpg" alt="Mahkama of Pacha" />
+        <p>Mahkama of Pacha</p>
       </div>
-      <div class="col-md-6">
-        <img src="src/Traditional Caftan.jpeg" class="img-fluid" alt="Traditional Caftan">
-      </div>
-    </div>
+    </a>
 
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="src/Corniche View.jpg" class="img-fluid" alt="Corniche View">
+    <a href="sindibad.html" class="link">
+      <div class="circle">
+        <img src="sindibad.jpg" alt="Sindibad Parc" />
+        <p>Sindibad Parc</p>
       </div>
-      <div class="col-md-6">
-        <div class="info-box">
-          <h2>📚 Cool Stories</h2>
-          <p>Did you know Casablanca was once called <strong>Anfa</strong>? Or that a movie named after it was filmed far away? There's even a tale about a <strong>ghost tram</strong> near the port!</p>
-        </div>
-      </div>
-    </div>
+    </a>
+  </div>
 
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="info-box">
-          <h2>🌍 Fun Facts</h2>
-          <p>🎬 Movie "Casablanca" wasn’t filmed here!<br>
-          🚋 The city has shiny trams.<br>
-          🕌 Tallest mosque tower in Africa!<br>
-          🗺️ Name "Anfa" means hill.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img src="src/casa1.jpg" class="img-fluid" alt="City View">
-      </div>
-    </div>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,130 +1,130 @@
+<!-- rabat.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mountain Travel</title>
-  <link href="src/card1.jpg" rel="stylesheet">
+  <title>Casablanca Tourist Guide</title>
+
   <style>
     body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #fff7f0;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background: url('images/marrakech-banner.jpg') no-repeat center/cover;
-    padding: 100px 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 3rem;
-    margin: 0;
-    animation: fadeIn 1s ease forwards;
-  }
-  
-  header p {
-    font-size: 1.2rem;
-    animation: fadeIn 1s ease forwards;
-  }
-  
-  .tabs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #ffe3c4;
-    padding: 10px;
-  }
-  
-  .tab {
-    margin: 5px;
-    padding: 10px 20px;
-    border: none;
-    background: #ff8c42;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-  }
-  
-  .tab:hover,
-  .tab.active {
-    background: #e75c1d;
-  }
-  
-  .tab-content {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    animation: fadeIn 0.8s ease forwards;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-  }
-  
-  .gallery img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef1e6;
+      text-align: center;
+      padding: 2rem;
+      color: #4477aa;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #75aadb;
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-title {
+      font-size: 4rem; /* Bigger than default h1 */
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #2c3e50;
+    }
+
+
+    .subtitle {
+      font-size: 1.8rem;
+      background-color: #c4e8cd;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 10px;
+      color: white;
+      margin-bottom: 3rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .circle {
+      background-color: #fff;
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
+      margin: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* stronger shadow */
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .circle:hover {
+      transform: scale(1.05); /* optional pop effect on hover */
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .circle p {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #c4e8cd;
+      padding: 0.4rem 1rem;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h3>MOUNTAIN TRAVEL EXPERTS</h3>
-    <h1>Your Mountain Travel</h1>
-    <p>Adventure Canada</p>
-  </header>
+ 
 
-  <section class="section">
-    <div class="content-block">
-      <img src="src/Chefchaouen.jpeg" alt="Mountain Night" />
-      <div class="text">
-        <h2>All You Need to Know</h2>
-        <p>Yes, we are your Mountain Travel Experts. What does that mean? Our team of 20 travel professionals made up of skiers and snowboarders who live and breathe mountain culture...</p>
-        <a href="#">READ MORE</a>
-      </div>
+<h1 class="custom-title">RABAT</h1>
+<div class="subtitle">5 places to visit</div>
+<div class="container">
+  <a href="hassan-tower.html" class="link">
+    <div class="circle">
+      <img src="hassantower.jpg" alt="Hassan Tower" />
+      <p>Hassan Tower</p>
     </div>
-
-    <div class="content-block">
-      <div class="text">
-        <h2>Italy, Territory of Peaks and Pinnacles</h2>
-        <p>Italy boasts a large number of beautiful, snow-capped mountains. From ski resorts to unique cultural traditions, explore this majestic destination with us.</p>
-        <a href="#">READ MORE</a>
-      </div>
-      <img src="src/carousel3.jpg" alt="Italy Mountains" />
+  </a>
+  <a href="kasbah.html" class="link">
+    <div class="circle">
+      <img src="oudayas.jpg" alt="Kasbah of the Udayas" />
+      <p>Kasbah of the Udayas</p>
     </div>
-
-    <div class="content-block">
-      <img src="src/casa.jpeg" alt="Exchange" />
-      <div class="text">
-        <h2>The Exchanges</h2>
-        <p>Mountain Travel Symposium is the single largest and longest-running annual gathering of mountain travel professionals in the world...</p>
-      </div>
+  </a>
+  <a href="mausoleum.html" class="link">
+    <div class="circle">
+      <img src="mausoleum.jpg" alt="Mausoleum of Mohammed V" />
+      <p>Mausoleum of Mohammed V</p>
     </div>
-  </section>
-
-  <script>
-    // JS functionality can go here if needed
-  </script>
+  </a>
+  <a href="chellah.html" class="link">
+    <div class="circle">
+      <img src="chellah.jpg" alt="Chellah" />
+      <p>Chellah</p>
+    </div>
+  </a>
+  <a href="rabat_beach.html" class="link">
+    <div class="circle">
+      <img src="beach.jpg" alt="Rabat Beach" />
+      <p>Rabat Beach</p>
+    </div>
+  </a>
+</div>
 </body>
-</html>

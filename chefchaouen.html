@@ -1,131 +1,131 @@
+<!-- chefchaouen.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Mountain Travel</title>
-  <link rel="stylesheet" href="chefchaouen.css">
-</head>
-  <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casablanca Tourist Guide</title>
   
-  body {
-    background-color: #1f1f1f;
-    color: white;
-  }
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #fef1e6;
+        text-align: center;
+        padding: 2rem;
+        color: #4477aa;
+      }
   
-  .hero {
-    height: 90vh;
-    background: url('header.jpg') no-repeat center center/cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+      h1 {
+        font-size: 3.5rem;
+        color: #75aadb;
+        margin-bottom: 0.5rem;
+      }
   
-  .hero .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    text-align: center;
-  }
+      .custom-title {
+        font-size: 4rem; /* Bigger than default h1 */
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #2c3e50;
+      }
   
-  .hero h1 {
-    font-size: 3em;
-    margin: 10px 0;
-  }
   
-  .hero .logo {
-    margin-top: 20px;
-    font-style: italic;
-  }
+      .subtitle {
+        font-size: 1.8rem;
+        background-color: #c4e8cd;
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        border-radius: 10px;
+        color: white;
+        margin-bottom: 3rem;
+      }
   
-  .content {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+        gap: 20px;
+      }
   
-  .section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
-    gap: 20px;
-  }
+      .circle {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 240px;
+        height: 240px;
+        margin: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* stronger shadow */
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
   
-  .section.reverse {
-    flex-direction: row-reverse;
-  }
+      .circle:hover {
+        transform: scale(1.05); /* optional pop effect on hover */
+      }
   
-  .section img {
-    width: 50%;
-    border-radius: 10px;
-  }
+      .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
   
-  .text-box {
-    width: 50%;
-  }
+      .circle p {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #c4e8cd;
+        padding: 0.4rem 1rem;
+        border-radius: 10px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+      }
   
-  .text-box h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-  }
-  
-  .text-box p {
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-  
-  .btn {
-    background-color: #517A6F;
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  </style>
-<body>
+      .link {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+   
 
-  <header class="hero">
-    <div class="overlay">
-      <h3>MOUNTAIN TRAVEL EXPERTS</h3>
-      <h1>Your Mountain Travel</h1>
-      <p class="logo">Outdoor ADVENTURE<br>Canada</p>
+
+<h1 class="custom-title">CHEFCHAOUEN</h1>
+<div class="subtitle">5 places to visit</div>
+<div class="container">
+  <a href="blue-street.html" class="link">
+    <div class="circle">
+      <img src="blue.jpg" alt="Blue Streets" />
+      <p>Blue Streets</p>
     </div>
-  </header>
-
-  <main class="content">
-    <section class="section">
-      <img src="src/carousel1.jpg" alt="Mountain night">
-      <div class="text-box">
-        <h2>All You Need to Know</h2>
-        <p>Yes, we groom our Mountain Travel Experts. Our team of 70+ ski professionals lives and breathes mountain culture.</p>
-        <a href="#" class="btn">READ MORE</a>
-      </div>
-    </section>
-
-    <section class="section reverse">
-      <div class="text-box">
-        <h2>Italy, Territory of Peaks and Pinnacles</h2>
-        <p>Italy boasts a large number of evocative mountain locales for any season. From north to south, it offers a wide range of landscapes.</p>
-        <a href="#" class="btn">READ MORE</a>
-      </div>
-      <img src="src/carousel2.jpg" alt="Italian mountains">
-    </section>
-
-    <section class="section">
-      <img src="src/carousel3.jpg" alt="Night landscape">
-      <div class="text-box">
-        <h2>The Exchanges</h2>
-        <p>MTS is the single largest and longest-running annual gathering of mountain travel professionals in the world.</p>
-      </div>
-    </section>
-  </main>
-
+  </a>
+  <a href="kasbah.html" class="link">
+    <div class="circle">
+      <img src="kasbah.jpg" alt="Kasbah Museum" />
+      <p>Kasbah Museum</p>
+    </div>
+  </a>
+  <a href="ras-elma.html" class="link">
+    <div class="circle">
+      <img src="raselma.jpg" alt="Ras El Maa" />
+      <p>Ras El Maa</p>
+    </div>
+  </a>
+  <a href="mosque.html" class="link">
+    <div class="circle">
+      <img src="mosque.jpg" alt="Spanish Mosque" />
+      <p>Spanish Mosque</p>
+    </div>
+  </a>
+  <a href="plaza.html" class="link">
+    <div class="circle">
+      <img src="plaza.jpg" alt="Outa El Hammam" />
+      <p>Outa El Hammam</p>
+    </div>
+  </a>
+</div>
 </body>
-</html>
