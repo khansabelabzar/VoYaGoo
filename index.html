@@ -26,17 +26,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Places</a></li>
-          </ul>
-          <form class="d-flex">
+    
+          <form class="d-flex ms-auto"> 
             <input class="form-control me-2" type="search" placeholder="Search">
             <button class="btn btn-outline-primary" type="submit">Search</button>
           </form>
+    
         </div>
       </div>
     </nav>
+    
 
 
 
@@ -74,105 +73,85 @@
     </div>
 
     <!-- Cards Section -->
-    <div class="container py-5">
-      <div class="row row-cols-1 row-cols-md-4 g-4">
+    <!-- Timed Opening Animated Cards Section -->
+<div class="container my-5">
+  <div class="card-grid">
 
-        <div class="col">
-          <a href="sahara.html" class="text-decoration-none">
-            <div class="card text-bg-dark equal-card h-100">
-              <img src="src_final/card1.jpg" class="card-img" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Sahara</h5>
-                <p class="card-text">A big, sandy desert with tall dunes, camels, and beautiful sunsets.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col">
-          <a href="chefchaouen.html" class="text-decoration-none">
-            <div class="card text-bg-dark equal-card h-100">
-              <img src="src_final/chefchaouen.jpeg" class="card-img" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Chefchaouen</h5>
-                <p class="card-text">famous for its blue-painted streets & mountains scenery.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col">
-          <a href="casablanca.html" class="text-decoration-none">
-            <div class="card text-bg-dark equal-card h-100">
-              <img src="src_final/casa.jpeg" class="card-img" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Casablanca</h5>
-                <p class="card-text">A busy city by the ocean, known for its big mosque and modern life.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="agadir.html" class="text-decoration-none">
-            <div class="card text-bg-dark equal-card h-100">
-              <img src="src_final/Agadir, Morocco.jpeg" class="card-img" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Agadir</h5>
-                <p class="card-text">A beach resort city popular for its seaside atmosphere and modern feel.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="tangier.html" class="text-decoration-none">
-            <div class="card text-bg-dark equal-card h-100">
-              <img src="src_final/tanger.jpeg" class="card-img" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Tangier</h5>
-                <p class="card-text">A cosmopolitan port city withh a mix of cultures and Mediterranean views.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="Marrakech.html" class="text-decoration-none">
-            <div class="card text-bg-dark equal-card h-100">
-              <img src="src_final/marrakech.jpeg" class="card-img" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Marrakech</h5>
-                <p class="card-text">Known for its lively markets & historic architecture.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="rabat.html" class="text-decoration-none">
-            <div class="card text-bg-dark equal-card h-100">
-              <img src="src_final/Rabat - Maroc.jpeg" class="card-img" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Rabat</h5>
-                <p class="card-text">The capital city, with old buildings, gardens, and a peaceful seaside.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="fes.html" class="text-decoration-none">
-            <div class="card text-bg-dark equal-card h-100">
-              <img src="src_final/fes.jpeg" class="card-img" alt="Card image">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Fez</h5>
-                <p class="card-text">Famous for its ancient medina & cultural heritage.</p>
-              </div>
-            </div>
-          </a>
-        </div>
+    <!-- Sahara -->
+    <a href="sahara.html" class="card animated-card" style="animation-delay: 0s;">
+      <div class="card__bg" style="background-image: url('src_final/card1.jpg');"></div>
+      <div class="card__content">
+        <h3>Sahara</h3>
+        <p>A big, sandy desert with tall dunes, camels, and beautiful sunsets.</p>
       </div>
-    </div>
+    </a>
+
+    <!-- Chefchaouen -->
+    <a href="chefchaouen.html" class="card animated-card" style="animation-delay: 0.1s;">
+      <div class="card__bg" style="background-image: url('src_final/chefchaouen.jpeg');"></div>
+      <div class="card__content">
+        <h3>Chefchaouen</h3>
+        <p>Famous for its blue-painted streets and calm mountain vibe.</p>
+      </div>
+    </a>
+
+    <!-- Casablanca -->
+    <a href="casablanca.html" class="card animated-card" style="animation-delay: 0.2s;">
+      <div class="card__bg" style="background-image: url('src_final/casa.jpeg');"></div>
+      <div class="card__content">
+        <h3>Casablanca</h3>
+        <p>Known for its big mosque, modern life, and Atlantic coast views.</p>
+      </div>
+    </a>
+
+    <!-- Agadir -->
+    <a href="agadir.html" class="card animated-card" style="animation-delay: 0.3s;">
+      <div class="card__bg" style="background-image: url('src_final/Agadir, Morocco.jpeg');"></div>
+      <div class="card__content">
+        <h3>Agadir</h3>
+        <p>A beach resort city with sunshine, surfing, and modern hotels.</p>
+      </div>
+    </a>
+
+    <!-- Tangier -->
+    <a href="tangier.html" class="card animated-card" style="animation-delay: 0.4s;">
+      <div class="card__bg" style="background-image: url('src_final/tangier.jpg');"></div>
+      <div class="card__content">
+        <h3>Tangier</h3>
+        <p>Where the Atlantic meets the Mediterranean, full of culture and history.</p>
+      </div>
+    </a>
+
+    <!-- Marrakech -->
+    <a href="marrakech.html" class="card animated-card" style="animation-delay: 0.5s;">
+      <div class="card__bg" style="background-image: url('src_final/marrakech.jpg');"></div>
+      <div class="card__content">
+        <h3>Marrakech</h3>
+        <p>Famous for its red walls, markets, gardens, and magical vibes.</p>
+      </div>
+    </a>
+
+    <!-- Rabat -->
+    <a href="rabat.html" class="card animated-card" style="animation-delay: 0.6s;">
+      <div class="card__bg" style="background-image: url('src_final/rabat.jpeg');"></div>
+      <div class="card__content">
+        <h3>Rabat</h3>
+        <p>The capital of Morocco with historic sites and modern buildings.</p>
+      </div>
+    </a>
+
+    <!-- Fes -->
+    <a href="fes.html" class="card animated-card" style="animation-delay: 0.7s;">
+      <div class="card__bg" style="background-image: url('src_final/fes.jpeg');"></div>
+      <div class="card__content">
+        <h3>Fes</h3>
+        <p>Home to the world’s oldest university and amazing old city vibes.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
 
 
     <!-- Bootstrap JS and dependencies -->
@@ -187,6 +166,8 @@
         <a href="#" class="text-light"></a>
       </div>
     </footer>  
+    
+
     
   </body>
 </html>
